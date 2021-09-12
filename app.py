@@ -6,8 +6,9 @@ from datetime import datetime
 app = Flask(__name__)
 # Connect db to flask using SQLAlchemy
 # Set username as root and passoword as empty string as there's no password
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:""@localhost/flask_todo"
 #syntax: "sqlclient://user:password@hostIP/databasename (create database first then tables wiill be created)"
+# app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:""@localhost/flask_todo"
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///todo.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
