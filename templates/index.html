@@ -21,7 +21,9 @@ Home
 <div class="container my-3">
     <h2>Your Todos</h2>
     <!-- jinja if statement -->
+
     {% if showTodos|length == 0 %}
+
     <div class="alert alert-dark" role="alert">
         No Todos found ! <br>
         Enter your Todos !
@@ -37,7 +39,7 @@ Home
                 <th scope="col">Actions</th>
             </tr>
         </thead>
-        {% endif %}
+        
         <tbody>
         <!-- jinja for loop -->
         {% for todo in showTodos %}
@@ -52,7 +54,8 @@ Home
             </tr>
             {% endfor %}
         </tbody>
-    </table> 
+    </table>
+    {% endif %} 
 </div>
 
 
