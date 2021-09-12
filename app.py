@@ -43,7 +43,7 @@ def hello_world():
 #     return '<p>All items from db are here</p>'
 
 
-@app.route('/delete/<int:srno>')
+@app.route('/delete/<int:srno>',methods=['GET','POST'])
 def deleteMe(srno):
     todo = Todo.query.filter_by(srno=srno).first()
     db.session.delete(todo)
