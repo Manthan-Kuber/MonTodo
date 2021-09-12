@@ -39,8 +39,8 @@ Home
         </thead>
         {% endif %}
         <tbody>
-            <!-- jinja for loop -->
-            {% for todo in showTodos %}
+        <!-- jinja for loop -->
+        {% for todo in showTodos %}
             <tr>
                 <th scope="row"> {{loop.index}} </th>
                 <td>{{todo.title}}</td>
@@ -52,8 +52,7 @@ Home
             </tr>
             {% endfor %}
         </tbody>
-    </table>
-
+    </table> 
 </div>
 
 
