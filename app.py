@@ -36,11 +36,11 @@ def hello_world():
     return render_template('index.html', showTodos=showTodos)
 
 
-@app.route('/show')
-def showMe():
-    showTodos = Todo.query.all()
-    print(showTodos)
-    return '<p>All items from db are here</p>'
+# @app.route('/show')
+# def showMe():
+#     showTodos = Todo.query.all()
+#     print(showTodos)
+#     return '<p>All items from db are here</p>'
 
 
 @app.route('/delete/<int:srno>')
