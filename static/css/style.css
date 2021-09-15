@@ -1,11 +1,10 @@
 body{
     background: #D3CCE3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3)fixed;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family:'Courier New', Courier, monospace;
     content: "";
     display: block;
-    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -17,4 +16,10 @@ body{
     background-size: cover;
      
 }
+
+@media only screen and (max-width: 767px) {
+    [class*="navbar navbar-dark bg-dark"] {
+        width: 33rem;
+    }
+  }
 
