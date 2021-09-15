@@ -19,7 +19,7 @@ body{
 
 @media only screen and (max-width: 767px) {
     [class*="navbar navbar-dark bg-dark"] {
-        width: 33rem;
+        width: 35rem;
     }
   }
 
